@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Yavin-Code Editor - Room <%= room_slug %></title>
+        
+        <link type="text/css" href='../css/lib/blueprint/reset.css' rel='stylesheet'>
+        <link type="text/css" href='../css/lib/blueprint/ie.css' rel='stylesheet'>
+        <link type="text/css" href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+        <link type="text/css" href='http://mansoorsayed.com/AstroForm/css/Aristo/jquery-ui-1.8.7.custom.css' rel='stylesheet'>
+        <link type="text/css" href='../css/app/layout.css' rel='stylesheet'>
+        <link type="text/css" href='../css/app/style.css' rel='stylesheet'>
+
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="container-app">
+                
+                <div id="editor-holder-app">
+                    <pre id="editor">alert('hello');</pre>
+                </div>
+                
+                <div id="controls-app">
+                    <div id="controls-accord">
+                        <h3><a href="">User List</a></h3>
+                        <div id="userlist-app">
+                            <p>
+                            User List goes here
+                            All sorts of cool stuff can be done from here..
+                            Like giving people permission and kicking foo's
+                            </p>
+                        </div>
+                        <h3><a href="">Settings</a></h3>
+                        <div id="settings-app">
+                            <p>
+                            Standard application settings controlled from here
+                            
+                            Things like language selections, and programming language selection
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="options-trigger-app">
+                            
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../nowjs/now.js"></script>
+        <script type="text/javascript" src="../js/lib/ace/ace.js"></script>
+        <script type="text/javascript" src="../js/lib/ace/theme-twilight.js"></script>
+        <script type="text/javascript" src="../js/lib/ace/mode-javascript.js"></script>
+        <script type="text/javascript" src="../js/app/app.js"></script>
+        <script>
+            $(window).load(function() {
+                <% if (first_user) { %>
+                    alert('Greetings! you are the room owner!\nYou should give this page\'s URL to your audiance to share some code.');
+                <% } %>
+            
+            });
+                    
+        </script>
+    </body>
+</html>

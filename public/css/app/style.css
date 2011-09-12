@@ -1,0 +1,36 @@
+h1 { 
+    font-family: 'Orbitron', arial, serif; 
+    font-size: 56px;
+}
+h2{ 
+    font-family: 'Orbitron', arial, serif; 
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+#github-ribbon img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+#content-home .action {
+    font-family: 'Orbitron', arial, serif; 
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    background: black;
+    padding: 10px 10px 5px 10px;
+}
+
+#footer-home a{
+    color: black;
+    font-weight: bold;
+}
+
+#footer-home .stats span{
+    font-weight: bold;
+}
+

@@ -1,0 +1,105 @@
+#header-home {
+    display: block;
+}
+
+#footer-home {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid black;
+    position: absolute;
+    bottom: 0px;
+}
+
+#footer-home .credits {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+#footer-home .stats {
+    font-size: 12px;
+}
+
+#content-home {
+    width: 600px;
+    display:block;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+#overlay {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height:100%;
+    text-align:center;
+    background: rgba(0,0,0,.5);
+    z-index: 999;
+}
+
+#overlay div {
+    width: 300px;
+    height: 100px;
+    margin: 150px auto 0px auto;
+    background-color: #ffffff;
+    padding:15px;
+    text-align: center;
+}
+
+
+/*
+    *************** APP STUFF ***************
+*/
+/*
+#header-app {
+    display: block;
+    height: 40px;
+    border-bottom: 1px solid black;
+}
+*/
+#editor-holder-app {
+    
+}
+
+#editor { 
+    text-align: left;
+    height: 100%;
+    width: 100%;
+
+}
+
+#controls-app {
+    position: absolute;
+    font-size: 14px;
+    right: 0;
+    top: 70px;
+    width: 200px;
+    height: 400px;
+    display: block;
+    background: rgba(255,255,255,.9);
+    z-index: 99;
+    color: white;
+}
+
+#options-trigger-app {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    display: block;
+    cursor: pointer;
+    color: white;
+    background: black url(../../images/gear.png) 15px 3px no-repeat;
+    width: 70px;
+    height: 55px;
+    border: 1px solid #444444;
+    border-right: 0px;
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    z-index: 100;
+}

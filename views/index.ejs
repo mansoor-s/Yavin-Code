@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Yavin-Code Editor</title>
+        
+        <link type="text/css" href='css/lib/blueprint/reset.css' rel='stylesheet'>
+        <link type="text/css" href='css/lib/blueprint/ie.css' rel='stylesheet'>
+        <link type="text/css" href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' >
+        <link type="text/css" href='css/app/layout.css' rel='stylesheet'>
+        <link type="text/css" href='css/app/style.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="container-home">
+                <a id="github-ribbon" href="http://github.com/mansoor-s">
+                    <img src="https://d3nwyuy0nl342s.cloudfront.net/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub">
+                </a>
+                <div id="header-home">
+                    <h1>Yavin-Code Editor</h1>
+                    <h2>Real-time code presentation</h2>
+                </div>
+                <div id="content-home">
+                    <a class="action" href="#host">Test Room</a>
+                    <p>To get started, simply go to xxxx.yyy/app/RoomName</p>
+                </div>
+                <div id="footer-home">
+                    <div class="credits">Created by: Mansoor Sayed - Using: 
+                        <a href="http://nodejs.org/">Node.js</a>, 
+                        <a href="http://redis.io/">Redis</a>, 
+                        <a href="http://expressjs.com/">Express</a>, 
+                        <a href="http://nowjs.com/">Nowjs</a>, 
+                        <a href="http://ace.ajax.org/">Ace</a>
+                    </div> 
+                    <div class="stats">
+                        Active Rooms: <span><%= active_rooms %></span>, 
+                        Active Users: <span><%= active_users %></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlay"><div>hello you have been blocked! congrats!</div></div>
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/app/script.js"></script>
+    </body>
+</html>
