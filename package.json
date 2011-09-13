@@ -2,7 +2,7 @@
     "name": "Yavin-Code",
     "version": "v0.0.1",
     "dependencies": {
-        "express": "2.0",
+        "express": "2.0.x",
         "now": "0.7.5"
     },
     "scripts": {
