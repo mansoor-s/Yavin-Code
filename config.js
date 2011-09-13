@@ -25,7 +25,5 @@ module.exports = {
     
     general: {
         user_prefix: 'StormTrooper-',
-    },
-    
-    
-}
+    }
+};
