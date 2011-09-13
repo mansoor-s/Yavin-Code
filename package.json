@@ -1,0 +1,6 @@
+{
+    "name": "Yavin-Code",
+    "scripts": {
+        "start": "app.js"
+    }
+}
