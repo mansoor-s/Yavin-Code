@@ -1,6 +1,6 @@
 {
     "name": "Yavin-Code",
-    "version": "0.4",
+    "version": "v0.1",
     "dependencies": {
         "express": "2.0",
         "now": "0.7.5"
