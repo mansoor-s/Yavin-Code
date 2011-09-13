@@ -1,11 +1,13 @@
 {
     "name": "Yavin-Code",
     "version": "v0.0.1",
+    "author": "Mansoor Sayed",
+    "homepage": "https://github.com/mansoor-s/Yavin-Code",
     "dependencies": {
         "express": "2.0.x",
         "now": "0.7.5"
     },
     "scripts": {
-        "start": "app.js"
+        "start": "node ./app.js"
     }
 }
