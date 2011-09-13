@@ -1,4 +1,10 @@
 {
     "name": "Yavin-Code",
-    "version": "0.01",
+    "dependencies": {
+        "express": "2.0",
+        "now": "0.7.5"
+    },
+    "scripts": {
+        "start": "app.js"
+    }
 }
