@@ -9,7 +9,7 @@ module.exports = {
         Server settings
     */
     server: {
-        port: 3000,
+        port: 80,
         session_secret: 'A4(4!654*&6d_s64%f6*d4f56#sd(d-ds1(2^',
     },
     
