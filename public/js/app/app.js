@@ -55,7 +55,6 @@ $(window).load(function() {
             } else {
                 now.set_readOnly(true);
             }
-            console.log('permission: ' + now.permission);
         };
         
         
