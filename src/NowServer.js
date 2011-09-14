@@ -59,6 +59,7 @@ NowServer.prototype.disconnected = function() {
     Also checks for sufficient privilages
 */
 NowServer.prototype.update_code = function() {
+    this.everyone.consoleLog('TEST');
     var self = this;
     return function(data) {
         var that = this;
