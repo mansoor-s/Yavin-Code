@@ -1,13 +1,14 @@
 var express = require('express'),
     nowjs = require('now'),
-    RedisStore = require('connect-redis');
+    SessionStore = require('connect-redis')(express);
+    //RedisStore = SessionStore.client;
 
 var config = require('./config.js'),
     NowServer = require('./src/NowServer.js');
 
 var app = express.createServer();
 
-var redisStore = new RedisStore({db: 0});
+var redisStore = new SessionStore({db: 0});
 var redisClient = redisStore.client;
 
 // initialized on per client bases
@@ -15,7 +16,7 @@ var nowServer = new NowServer(nowjs, app, redisClient, config);
 
 // enable connect sessions
 app.use(express.cookieParser());
-app.use(express.session({ secret: config.server.session_secret, store: new RedisStore({db: 1}) }));
+app.use(express.session({ secret: config.server.session_secret, store: new SessionStore({db: 1}) }));
 
 // setup public accesable files
 app.use(express.static(__dirname + '/public'));
