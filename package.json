@@ -5,7 +5,8 @@
     "homepage": "https://github.com/mansoor-s/Yavin-Code",
     "dependencies": {
         "express": "2.0.x",
-        "now": "0.7.5"
+        "now": "0.7.5",
+        "ejs": "0.4.x"
     },
     "scripts": {
         "start": "node ./app.js"
