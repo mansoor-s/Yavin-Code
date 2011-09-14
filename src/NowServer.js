@@ -33,7 +33,6 @@ NowServer.prototype.connected = function() {
             group.addUser(that.user.clientId);
             group.now.user_connected(userInfo.userName);
             that.now.set_permission(userInfo.permission);
-            console.log('user Info: ' + util.inspect(userInfo, null , null));
         });
     };
 };
